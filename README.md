@@ -43,7 +43,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 * /CheckGroupMembership  
 * /CheckGroupMembership:<CustomGroupName>  
 
-### Command Line Examples:  
+### Command Line examples:  
     Migrate_PrintQs.vbs PrintMigTable.csv                                   [Migrate current Print Queues based on the information inside specified 'PrintMigTable.csv' file. This file is to be posted on the Network Share specified in the 'PrintQMappingsRepo' variable]  
     Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName	        [Add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
     Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName        [Remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
