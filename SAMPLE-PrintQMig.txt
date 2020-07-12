@@ -1,0 +1,7 @@
+\\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1
+\\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2
+\\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3
+\\ContosoOldPrtSrv1\OldPrtQ4,
+\\ContosoOldPrtSrv1\OldPrtQ5,DELETE
+\\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL
+
