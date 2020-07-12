@@ -6,6 +6,7 @@ VBScript scripts repository
 '  Author   : Cary GARVIN
 '  Contact  : cary(at)garvin.tech
 '  LinkedIn : https://www.linkedin.com/in/cary-garvin-99909582
+'  GitHub   : https://github.com/carygarvin/
 '
 '
 '  Script Name  : Migrate_PrintQs.vbs
@@ -76,3 +77,4 @@ VBScript scripts repository
 '  Note: The bahaviour for user's Default Printer is that if whatever reason no new Default Printer can be set in its place, it will never be removed.
 '
 '  ****************************************************************************************************
+' ***************************************************************************************************
