@@ -61,7 +61,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 
 
 # Script configuration:  
-There are 5 configurable variables (see lines 149 to 153) which need to be set by IT Administrator prior to using the present Script:  
+There are 5 configurable variables (see lines 149 to 153 in the actual script) which need to be set by IT Administrator prior to using the present Script:  
 * Variable '**DeptsOU**' contains the parent node OU in the form "OU=xyz" where all departments are residing.  
 * Variable '**PrintServersOU**' contains the OU where the Print Servers involved in the migration are located. Specifying this allows for fatser LDAP searches.  
 * Variable '**PrintMigGroupsOU**' contains the OU where the different printer migrations Groups are residing. Specifying this allows for fatser LDAP searches.  
