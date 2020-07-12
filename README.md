@@ -35,7 +35,7 @@ Alternatively, the script can be run from a Command Line (`cscript Migrate-Print
 The script's Remove or Affix feature can be invoked either through Command Line switches when invoking the script (mostly used in interactive cases) or through specific fomratting of mappings with the mappings file (mostly used via a Logon Script).  
 
 # Script usage:  
-## Command Line switches:  
+### Command Line switches:  
 * FileName.csv  
 * /Affix:  
 * /Remove:  
@@ -43,7 +43,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 * /CheckGroupMembership  
 * /CheckGroupMembership:<CustomGroupName>  
 
-## Command Line Examples:  
+### Command Line Examples:  
         Migrate_PrintQs.vbs PrintMigTable.csv                                   [Migrate current Print Queues based on the information inside specified 'PrintMigTable.csv' file. This file is to be posted on the Network Share specified in the 'PrintQMappingsRepo' variable]  
         Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName	    [Add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
         Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName	    [Remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
@@ -51,7 +51,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
         Migrate_PrintQs.vbs /CheckGroupMembership                               [Tell the script to act as if it is run within the Logon Script, meaning that the Mappings table to use is the default computed one for the user's devised Department.]  
         Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
 
-## Migration action Examples via mappings file:  
+### Migration action Examples via mappings file:  
         \\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ1' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ1']  
         \\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ2' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ2']  
         \\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ3' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ3']  
