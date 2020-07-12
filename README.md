@@ -1,7 +1,4 @@
 # VBScript
-VBScript scripts repository
-***************************************************************************************************
-***************************************************************************************************
 
 Author       : Cary GARVIN  
 Contact      : cary(at)garvin.tech  
@@ -77,5 +74,3 @@ There are 5 configurable variables (see lines 149 to 153) which need to be set b
 
 Note: The bahaviour for user's Default Printer is that if for whatever reason no new Default Printer can be set in its place, it will never be removed.  
 
-****************************************************************************************************
-****************************************************************************************************
