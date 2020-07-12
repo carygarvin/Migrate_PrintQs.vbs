@@ -51,7 +51,8 @@ The script's Remove or Affix feature can be invoked either through Command Line 
         Migrate_PrintQs.vbs /CheckGroupMembership                               [This will tell the script to act as if it is run within the Logon Script, meaning that the Mappings table to use is the default computed one for the user's devised Department.]  
         Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
 
-## Migration action Examples via mappings file (assuming Print Server migration from 'ContosoOldPrtSrv1' to 'ContosoNewPrtSrv1'):  
+## Migration action Examples via mappings file
+(assuming Print Server migration from 'ContosoOldPrtSrv1' to 'ContosoNewPrtSrv1'):  
         \\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ1' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ1']  
         \\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ2' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ2']  
         \\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ3' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ3']  
