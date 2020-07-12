@@ -45,8 +45,8 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 
 ## Command Line Examples:  
         Migrate_PrintQs.vbs PrintMigTable.csv                                   [This will migrate current Print Queues based on the information inside specified 'PrintMigTable.csv' file. This file is to be posted on the Network Share specified in the 'PrintQMappingsRepo' variable]  
-        Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName	  [This will add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
-        Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName		 [This will remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
+        Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName	   [This will add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
+        Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName	[This will remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
         Migrate_PrintQs.vbs /RemoveAllPrinters                                  [This will remove all of user's printers]  
         Migrate_PrintQs.vbs /CheckGroupMembership                               [This will tell the script to act as if it is run within the Logon Script, meaning that the Mappings table to use is the default computed one for the user's devised Department.]  
         Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
