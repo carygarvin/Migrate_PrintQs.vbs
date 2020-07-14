@@ -15,6 +15,10 @@ History      : The present script has been used by large organizations to succes
 
 Purpose      : The present script is to be used in the scope of a Print Server migration whereby Network Print Queues are migrated from one old Print Server (to be decommissioned) to a new Print server. The script will take care of remapping all of user Print Queues based on information contained in a mappings or correspondence file with each line in the format
                       `'\\OldPrintServer\OldPrintQueueName,\\NewPrintServer\NewPrintQueueName'`  
+                      
+                                                \\OldPrintServer\OldPrintQueueName,\\NewPrintServer\NewPrintQueueName
+
+
 On top of that the script has the ability to remove (Remove) some printers altogether or Add (Affix) one or more printers deemed compulsory.  
 
 # Script information:
