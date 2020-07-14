@@ -13,8 +13,9 @@ Release date : 07/02/2015 (CET)
 
 History      : The present script has been used by large organizations to successfully migrate tens of thousands of network printers from old to new Print Servers. A lot of safeguards have been buil into this Script.  
 
-Purpose      : The present script is to be used in the scope of a Print Server migration whereby Network Print Queues are migrated from one old Print Server (to be decommissioned) to a new Print server. The script will take care of remapping all of user Print Queues based on information contained in a mappings or correspondence file with each line in the format `'\\OldPrintServer\OldPrintQueueName,\\NewPrintServer\NewPrintQueueName'`.  
-               On top of that the script has the ability to remove (Remove) some printers altogether or Add (Affix) one or more printers deemed compulsory.  
+Purpose      : The present script is to be used in the scope of a Print Server migration whereby Network Print Queues are migrated from one old Print Server (to be decommissioned) to a new Print server. The script will take care of remapping all of user Print Queues based on information contained in a mappings or correspondence file with each line in the format
+                      `'\\OldPrintServer\OldPrintQueueName,\\NewPrintServer\NewPrintQueueName'`  
+On top of that the script has the ability to remove (Remove) some printers altogether or Add (Affix) one or more printers deemed compulsory.  
 
 # Script information:
 Script to migrate user printers from one Print Server to another based on a correspondence/mapping file holding Old Print Queue to New Print Queue mappings.  
