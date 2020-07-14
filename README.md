@@ -21,8 +21,7 @@ On top of that the script has the ability to remove (Remove) some printers altog
 
 # Script information:
 Script to migrate user printers from one Print Server to another based on a correspondence/mapping file holding Old Print Queue to New Print Queue mappings.  
-The present Script is best invoked during the Login Script through Active Directory Group membership or interactively by specifying any specific mapping file to use as a parameter  
-The present Script uses for maximum reliability several methods in order to identify user printers.  
+The present Script is best invoked during the Login Script through Active Directory Group membership or interactively by specifying any specific mapping file to use as a parameter. The present Script uses for maximum reliability several methods in order to identify user printers.  
 The present Script has many features as follows:  
 * Migrate user PrintQueues at logon or interactively based on information contained in the specified mappings file  
 * Add one or more compulsory printers which all users not to have access to.  
