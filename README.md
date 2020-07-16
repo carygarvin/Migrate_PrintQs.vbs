@@ -19,7 +19,7 @@ Purpose      : The present script is to be used in the scope of a Print Server m
 
 On top of that the script has the ability to remove (Remove) some printers altogether or Add (Affix) one or more printers deemed compulsory.  
 
-# Script information:
+# Script information
 Script to migrate user printers from one Print Server to another based on a correspondence/mapping file holding Old Print Queue to New Print Queue mappings.  
 The present Script is best invoked during the Login Script through Active Directory Group membership or interactively by specifying any specific mapping file to use as a parameter. The present Script uses for maximum reliability several methods in order to identify user printers.  
 The present Script has many features as follows:  
@@ -46,7 +46,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 * /CheckGroupMembership  
 * /CheckGroupMembership:<CustomGroupName>  
 
-### Command Line examples:  
+### Command Line examples  
     Migrate_PrintQs.vbs PrintMigTable.csv                                   [Migrate current Print Queues based on the information inside specified 'PrintMigTable.csv' file. This file is to be posted on the Network Share specified in the 'PrintQMappingsRepo' variable]  
     Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName	        [Add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
     Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName        [Remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
@@ -54,7 +54,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
     Migrate_PrintQs.vbs /CheckGroupMembership                               [Tell the script to act as if it is run within the Logon Script, meaning that the Mappings table to use is the default computed one for the user's devised Department.]  
     Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
 
-### Migration action examples via Mappings file:  
+### Migration action examples via Mappings file  
     \\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ1' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ1']  
     \\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ2' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ2']  
     \\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3               [Print Queue '\\ContosoOldPrtSrv1\OldPrtQ3' will be replaced by '\\ContosoNewPrtSrv1\NewPrtQ3']  
