@@ -37,8 +37,8 @@ Here's an example of how it can be called from within a "parent" VBScript Logon 
 Alternatively, the script can be run from a Command Line (`cscript Migrate-PrintQs.vbs`).  
 The script's Remove or Affix feature can be invoked either through Command Line switches when invoking the script (mostly used in interactive cases) or through specific fomratting of mappings with the mappings file (mostly used via a Logon Script).  
 
-# Script usage:  
-### Command Line switches:  
+# Script usage  
+### Command Line switches  
 * FileName.csv  
 * /Affix:  
 * /Remove:  
@@ -63,7 +63,7 @@ The script's Remove or Affix feature can be invoked either through Command Line 
     \\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL                                  [Print Queue '\\ContosoNewPrtSrv1\NewGrpPrtQ' will be univocally added if not found]  
 
 
-# Script configuration:  
+# Script configuration  
 There are 5 configurable variables (see lines 149 to 153 in the actual script) which need to be set by IT Administrator prior to using the present Script:  
 * Variable '**DeptsOU**' contains the parent node OU in the form "OU=xyz" where all departments are residing.  
 * Variable '**PrintServersOU**' contains the OU where the Print Servers involved in the migration are located. Specifying this allows for fatser LDAP searches.  
