@@ -11,7 +11,7 @@ Script Name  : Migrate_PrintQs.vbs
 Version      : 1.0  
 Release date : 07/02/2015 (CET)  
 
-History      : The present script has been used by large organizations to successfully migrate tens of thousands of network printers from old to new Print Servers. A lot of safeguards have been buil into this Script.  
+History      : The present script has been used by large organizations to successfully migrate tens of thousands of network printers from old to new Print Servers. A lot of safeguards have been built into this Script.  
 
 Purpose      : The present script is to be used in the scope of a Print Server migration whereby Network Print Queues are migrated from one old Print Server (to be decommissioned) to a new Print server. The script will take care of remapping all of user Print Queues based on information contained in a mappings or correspondence file with each line in the format
                       
