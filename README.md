@@ -66,8 +66,8 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 # Script configuration  
 There are 5 configurable variables (see lines 149 to 153 in the actual script) which need to be set by IT Administrator prior to using the present Script:  
 * Variable **DeptsOU** contains the parent node OU in the form "OU=Departments" for instance where all departments are residing.  
-* Variable **PrintServersOU** contains the OU where the Print Servers involved in the migration are located. Specifying this allows for fatser LDAP searches.  
-* Variable **PrintMigGroupsOU** contains the OU where the different printer migrations Groups are residing. Specifying this allows for fatser LDAP searches.  
+* Variable **PrintServersOU** contains the OU where the Print Servers involved in the migration are located. Specifying this allows for faster LDAP searches.  
+* Variable **PrintMigGroupsOU** contains the OU where the different printer migrations Groups are residing. Specifying this allows for faster LDAP searches.  
           Printer Migrations Groups for each BU/Department/OU are expected to match the pattern "_[SubOUNameInDeptsOUVar]-PrinterMigration_".  
           So for instance for HR, the script expects an 'HR' OU inside **DeptsOU** above and the AD Group containing HR users which can migrate to be named "_HR-PrinterMigration_" and reside in AD inside the OU specified through this **PrintMigGroupsOU** variable.  
 * Variable **PrintQMappingsRepo** contains the UNC location of where the mapping file(s) reside. (Ensure NTFS Security and Share permissions are set for 'Everyone' to READ).  
