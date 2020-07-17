@@ -71,7 +71,7 @@ There are 5 configurable variables (see lines 149 to 153 in the actual script) w
           Printer Migrations Groups for each BU/Department/OU are expected to match the pattern "_[SubOUNameInDeptsOUVar]-PrinterMigration_".  
           So for instance for HR, the script expects an 'HR' OU inside **DeptsOU** above and the AD Group containg HR users which can migrate to be named "_HR-PrinterMigration_" and reside in AD inside the OU specified through this **PrintMigGroupsOU** variable.  
 * Variable **PrintQMappingsRepo** contains the UNC location of where the mapping file(s) reside. (Ensure NTFS Security and Share permissions are set for 'Everyone' to READ).  
-          Printer Mappings files to be posted here are expected to match the string pattern "_<SubOUNameIn{DeptsOU}Var>-PrintQMig.csv_".  
+          Printer Mappings files to be posted here are expected to match string pattern "_<SubOUNameIn{DeptsOU}Var>-PrintQMig.csv_".  
           So for instance again for HR, the script expects an 'HR' OU inside **DeptsOU** above and the file containing the mappings for HR must be called "_HR-PrintQMig.csv_" and obviously must be present on the Network Share specified in this **PrintQMappingsRepo**.  
 * Variable **PrintQMigrationLogs** contains the UNC location of where the user Print Queue migrations logs are to be created. (Ensure NTFS Security and Share permissions are set for 'Everyone' to WRITE).  
 
