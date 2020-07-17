@@ -35,7 +35,7 @@ Here's an example of how it can be called from within a "parent" VBScript Logon 
                               objShell.Run "Migrate_PrintQs.vbs"
                           EndIf  
 Alternatively, the script can be run from a Command Line (`cscript Migrate-PrintQs.vbs`).  
-The script's Remove or Affix feature can be invoked either through Command Line switches when invoking the script (mostly used in interactive cases) or through specific fomratting of mappings with the mappings file (mostly used via a Logon Script).  
+The script's Remove or Affix feature can be invoked either through Command Line switches when invoking the script (mostly used in interactive cases) or through specific formatting of mappings with the mappings file (mostly used via a Logon Script).  
 
 # Script usage  
 ### Command Line switches  
