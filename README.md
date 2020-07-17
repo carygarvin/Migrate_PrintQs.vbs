@@ -76,4 +76,4 @@ There are 5 configurable variables (see lines 149 to 153 in the actual script) w
 * Variable **PrintQMigrationLogs** contains the UNC location of where the user Print Queue migrations logs are to be created. (Ensure NTFS Security and Share permissions are set for 'Everyone' to WRITE).  
 
 
-Note: The bahaviour for user's Default Printer is that, if for whatever reason, no new Default Printer can be set in its place, it will never be removed.  
+Note: The behaviour for user's Default Printer is that, if for whatever reason, no new Default Printer can be set in its place, it will never be removed.  
