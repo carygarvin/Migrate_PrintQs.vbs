@@ -27,7 +27,7 @@ The present Script has many features as follows:
 * Add one or more compulsory printers which all users not to have access to.  
 * Unequivocally remove obsolete printers.  
 
-As stated, the present script can be invoked either from a Logon Script in which the current user can have its group membership tested and if validated, call the script. By default, the mappings file that will be used will match the user's OU. This allows to have mappings file specific to each departmernt/bu in case of large organizations.  
+As stated, the present script can be invoked either from a Logon Script in which the current user can have its group membership tested and if validated, call the script. By default, the mappings file that will be used will match the user's OU. This allows to have mappings file specific to each department/BU in case of large organizations.  
 Here's an example of how it can be called from within a "parent" VBScript Logon Script provided the Group's Distinguished Name is stored in strGroupDN and a binding has been made to the user object through objUser:  
   
                           Set objGroup = GetObject("LDAP://" & strGroupDN)
