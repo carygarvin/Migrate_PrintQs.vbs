@@ -1,4 +1,4 @@
-# VBScript 'Migrate_PrintQs.vbs'
+# Migrate_PrintQs.vbs
 
 
 Author       : Cary GARVIN  
