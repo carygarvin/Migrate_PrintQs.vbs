@@ -62,13 +62,13 @@ The script's Remove or Affix feature can be invoked either through Command Line 
      \\ContosoOldPrtSrv1\OldPrtQ5,DELETE
      \\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL
 
-Which will respectively carry out the following actions:
-Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'
-Replace '\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'
-Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'
-Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found
-Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found
-Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found
+Which respectively will carry out the following actions:  
+Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'  
+Replace '\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'  
+Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'  
+Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found  
+Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found  
+Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found  
 
 # Script configuration  
 There are 5 configurable variables (see lines 149 to 153 in the actual script) which need to be set by IT Administrator prior to using the present Script:  
