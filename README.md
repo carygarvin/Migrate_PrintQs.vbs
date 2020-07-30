@@ -74,9 +74,9 @@ Same as above but for special cases where the user does not comply to the Depart
      \\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL
 
 Which respectively will carry out the following actions:  
-Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'  
-Replace '\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'  
-Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'  
+Replace if found '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'  
+Replace if found '\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'  
+Replace if found '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'  
 Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found  
 Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found  
 Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found  
