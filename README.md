@@ -55,12 +55,12 @@ The script's Remove or Affix feature can be invoked either through Command Line 
     Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
 
 ### Migration action examples via Mappings file  
-`\\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1`             [Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1']  
-`\\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2`             [Replace'\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2']  
-`\\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3`             [Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3']  
-`\\ContosoOldPrtSrv1\OldPrtQ4,`                                         [Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found]  
-`\\ContosoOldPrtSrv1\OldPrtQ5,DELETE`                                   [Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found]  
-`\\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL`                                [Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found]  
+`\\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1`             Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'  
+`\\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2`             Replace'\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'  
+`\\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3`             Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'  
+`\\ContosoOldPrtSrv1\OldPrtQ4,`                                         Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found  
+`\\ContosoOldPrtSrv1\OldPrtQ5,DELETE`                                   Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found  
+`\\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL`                                Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found  
 
 
 # Script configuration  
