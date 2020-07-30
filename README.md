@@ -47,21 +47,28 @@ The script's Remove or Affix feature can be invoked either through Command Line 
 * /CheckGroupMembership:<CustomGroupName>  
 
 ### Command Line examples  
-    Migrate_PrintQs.vbs PrintMigTable.csv                                   [Migrate current Print Queues based on the information inside specified 'PrintMigTable.csv' file. This file is to be posted on the Network Share specified in the 'PrintQMappingsRepo' variable]  
-    Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName	        [Add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
-    Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName        [Remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
-    Migrate_PrintQs.vbs /RemoveAllPrinters                                  [Remove all of user's printers]  
-    Migrate_PrintQs.vbs /CheckGroupMembership                               [Tell the script to act as if it is run within the Logon Script, meaning that the Mappings table to use is the default computed one for the user's devised Department.]  
-    Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
+`Migrate_PrintQs.vbs PrintMigTable.csv`                                   [Migrate current Print Queues based on the information inside specified 'PrintMigTable.csv' file. This file is to be posted on the Network Share specified in the 'PrintQMappingsRepo' variable]  
+`Migrate_PrintQs.vbs /Affix:\\ContosoNewPrtSrv\NewPrintQueueName`	        [Add a mapping to '\\ContosoNewPrtSrv\NewPrintQueueName' if none already exists]  
+`Migrate_PrintQs.vbs /Remove:\\ContosoOldPrtSrv\OldPrintQueueName`        [Remove any mapping to '\\ContosoOldPrtSrv\OldPrintQueueName' if any exists]  
+`Migrate_PrintQs.vbs /RemoveAllPrinters`                                  [Remove all of user's printers]  
+`Migrate_PrintQs.vbs /CheckGroupMembership`                               [Tell the script to act as if it is run within the Logon Script, meaning that the Mappings table to use is the default computed one for the user's devised Department.]  
+`Migrate_PrintQs.vbs /CheckGroupMembership:PrintMigUsers`                 [Same as above but for special cases where the user does not comply to the Department OU = Group prefix = Mappings CSV file prefix paradigm. The migration will take place based on the Mappings table from the user's Department OU]  
 
 ### Migration action examples via Mappings file  
-`\\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1`             Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'  
-`\\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2`             Replace'\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'  
-`\\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3`             Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'  
-`\\ContosoOldPrtSrv1\OldPrtQ4,`                                         Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found  
-`\\ContosoOldPrtSrv1\OldPrtQ5,DELETE`                                   Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found  
-`\\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL`                                Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found  
+     \\ContosoOldPrtSrv1\OldPrtQ1,\\ContosoNewPrtSrv1\NewPrtQ1
+     \\ContosoOldPrtSrv1\OldPrtQ2,\\ContosoNewPrtSrv1\NewPrtQ2
+     \\ContosoOldPrtSrv1\OldPrtQ3,\\ContosoNewPrtSrv1\NewPrtQ3
+     \\ContosoOldPrtSrv1\OldPrtQ4,
+     \\ContosoOldPrtSrv1\OldPrtQ5,DELETE
+     \\ContosoNewPrtSrv1\NewGrpPrtQ,INSTALL
 
+Which will respectively carry out the following actions:
+Replace '\\ContosoOldPrtSrv1\OldPrtQ1' by '\\ContosoNewPrtSrv1\NewPrtQ1'
+Replace '\\ContosoOldPrtSrv1\OldPrtQ2' by '\\ContosoNewPrtSrv1\NewPrtQ2'
+Replace '\\ContosoOldPrtSrv1\OldPrtQ3' by '\\ContosoNewPrtSrv1\NewPrtQ3'
+Remove '\\ContosoOldPrtSrv1\OldPrtQ4' if found
+Remove '\\ContosoOldPrtSrv1\OldPrtQ5' if found
+Add '\\ContosoNewPrtSrv1\NewGrpPrtQ' if not found
 
 # Script configuration  
 There are 5 configurable variables (see lines 149 to 153 in the actual script) which need to be set by IT Administrator prior to using the present Script:  
